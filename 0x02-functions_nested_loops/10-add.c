@@ -9,7 +9,5 @@ int add(int a, int b)
 {
 	int s;
 	s = a + b;
-	_putchar((s / 10) + '0');
-	_putchar((s % 10) + '0');
-	_putchar('\n');
+	return (s);
 }
