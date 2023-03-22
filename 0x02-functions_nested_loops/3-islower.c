@@ -2,9 +2,9 @@
 
 /**
  * _islower - Entry point
- *  returns: 1 if the character c is lowercase and
- * returns: 0 if it is not the case
- * @c : character
+ *
+ * @c: character in ASCII code
+ *  returns: 1 if the character c is lowercase , 0 otherwise
  */
 
 int _islower(int c)
