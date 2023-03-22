@@ -2,15 +2,15 @@
 
 /**
  * _islower - Entry point
- *
  * @c: character in ASCII code
- *  returns: 1 if the character c is lowercase , 0 otherwise
+ *  return: 1 if the c is lowercase , 0 otherwise
  */
 
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
+	if (c <= 'z' && c >= 'a')
 		return (1);
 	else
 		return (0);
+	_putchar('\n');
 }
