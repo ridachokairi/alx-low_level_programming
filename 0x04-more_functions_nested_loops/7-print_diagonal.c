@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_line - prints a diagonal line using \ more times
+ * print_diagonal - prints a diagonal line using \ more times
  *@n : the number of \ used
  *
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
-        int i,j;
+        int i, j;
 
         if (n <= 0)
                 _putchar('\n');
