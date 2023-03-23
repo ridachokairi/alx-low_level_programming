@@ -2,20 +2,19 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - prints the number of a given number n to 98 
- * in order
- *@n:integer
+ * print_to_98 - prints all natural numbers from n to 98
+ * @n: integer
  */
 
 void print_to_98(int n)
 {
-	int i;
+	int counter;
 
-	if (n < 98)
-		for (i = n; i < 98; i++)
-			printf("%d, ", i);
+	if (n > 98)
+		for (counter = n; counter > 98; --counter)
+			printf("%d, ", counter);
 	else
-		for (i = n; n > 98; i--)
-			printf("%d, ", i);
+		for (counter = n; counter < 98; ++counter)
+			printf("%d, ", counter);
 	printf("98\n");
 }
