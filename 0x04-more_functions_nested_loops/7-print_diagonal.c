@@ -8,7 +8,7 @@
 
 void print_line(int n)
 {
-        int i,j = 1;
+        int i,j;
 
         if (n <= 0)
                 _putchar('\n');
@@ -16,12 +16,15 @@ void print_line(int n)
         {
                 for (i = 1; i <= n; i++)
 		{
-			if (j == i)
+			for (j = 1; j <= n; j++)
 			{
-				_putchar('\');
-				j++;
+				if (j == i)
+				{
+					_putchar('\');
+					_putchar('\n');
+				}
+			break;
 			}
-			_putchar('\n');
 		}
 	}
 }
