@@ -2,21 +2,20 @@
 
 /**
  * print_triangle - prints a triangle
- * @size : the base of the triangle
- *
+ * @size: size of the triangle
  */
 
 void print_triangle(int size)
 {
-	int i,j;
+	int i, j;
 
 	if (size <= 0)
 		_putchar('\n');
-	else 
+	else
 	{
-		for (i = 1; i <= size; i++)
+		for (i = 1 ; i <= size ; i++)
 		{
-			for (j = 1; j <= size; j++)
+			for (j = 1 ; j <= size ; j++)
 			{
 				if ((i + j) <= size)
 					_putchar(' ');
@@ -24,7 +23,6 @@ void print_triangle(int size)
 					_putchar('#');
 			}
 			_putchar('\n');
-		
 		}
 	}
 }
