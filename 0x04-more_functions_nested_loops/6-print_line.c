@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_line - prints a straight line using _ more times
- *@n : the number of _ used
- *
+ * print_line - draws a straight line in the terminal
+ * @n: the number of times
  */
 
 void print_line(int n)
@@ -12,9 +11,9 @@ void print_line(int n)
 
 	if (n <= 0)
 		_putchar('\n');
-	else 
+	else
 	{
-		for (i = 0; i < n; i++)
+		for (i = 1 ; i <= n ; i++)
 			_putchar('_');
 		_putchar('\n');
 	}
