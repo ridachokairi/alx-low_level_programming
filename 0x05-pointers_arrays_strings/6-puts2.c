@@ -11,11 +11,12 @@
 void puts2(char *str)
 {
 	int i, len = 0;
+	char *temp = str;
 
-	while (*str != '\0')
+	while (*temp != '\0')
 	{
 		len++;
-		str++;
+		temp++;
 	}
 	for (i = 0; i <= len - 1; i++)
 	{
