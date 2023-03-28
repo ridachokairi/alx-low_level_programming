@@ -15,11 +15,13 @@ void puts2(char *str)
 	while (*str != '\0')
 	{
 		len++;
+		str++;
 	}
-	str--;
-	for (i = 0; i < len - 1; i = i + 2)
+	len--;
+	for (i = 0; i <= len ; i++)
 	{
-		_putchar(*str);
+		if (i % 2 == 0)
+			_putchar(str[i]);
 	}
 	_putchar('\n');
 }
