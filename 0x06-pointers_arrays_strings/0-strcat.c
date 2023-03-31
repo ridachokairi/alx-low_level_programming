@@ -24,9 +24,10 @@ char *_strcat(char *dest, char *src)
 		l2++;
 		dest1;
 	}
-	for (i = 1; i < l1; i++)
+	for (i = 0; i < l1; i++)
 	{
 		dest[i + l2] = src[i];
 	}
+	dest[l1+l2] = '\0';
 	return (dest);
 }
