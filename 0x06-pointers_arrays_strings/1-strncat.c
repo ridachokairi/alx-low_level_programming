@@ -5,7 +5,7 @@
  * @dest: the first string
  * @src: the appended string
  * @n: numbers of bytes of the appended string
- *
+ * Return: string
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -16,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	while (src[j] <= src[n - 1])
+	while (j < n && src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
