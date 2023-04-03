@@ -5,7 +5,7 @@
  * @dest : the memory area to copy to 
  * @src: the memory area to copy from
  * @n: number of bytes to copy
- * Return: pointer
+ * Return: copied memory
  */
 
 char *_mempcy(char *dest, char *src, unsigned int n)
@@ -13,7 +13,7 @@ char *_mempcy(char *dest, char *src, unsigned int n)
 	int i = 0;
 	int j = n;
 
-	for (; i < j ; i++)
+	for (; i < j; i++)
 	{
 		dest[i] = src[i];
 		n--;
