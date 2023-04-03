@@ -10,9 +10,12 @@
 
 char *_mempcy(char *dest, char *src, unsigned int n)
 {
-	for (; n > 0; n--)
+	int i = 0;
+
+	for (; i < n ; i++)
 	{
-		dest[n] = src[n];
+		dest[i] = src[i];
+		n--;
 	}
 	return (dest);
 }
