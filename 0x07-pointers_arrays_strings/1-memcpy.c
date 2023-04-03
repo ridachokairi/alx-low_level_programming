@@ -17,5 +17,5 @@ char *_mempcy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 		i++;
 	}
-	return (dest);
+	return (dest - n);
 }
