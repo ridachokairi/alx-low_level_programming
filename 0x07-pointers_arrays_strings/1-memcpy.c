@@ -13,7 +13,7 @@ char *_mempcy(char *dest, char *src, unsigned int n)
 	int a = 0;
 	int i = n;
 
-	for (; a < i && n > 0; a++)
+	for (; a < i; a++)
 	{
 		dest[a] = src[a];
 		n--;
