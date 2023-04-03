@@ -5,7 +5,7 @@
  * @dest : the memory area to copy to 
  * @src: the memory area to copy from
  * @n: number of bytes to copy
- * Return: copied memory
+ * Return: a pointer to copied memory
  */
 
 char *_mempcy(char *dest, char *src, unsigned int n)
