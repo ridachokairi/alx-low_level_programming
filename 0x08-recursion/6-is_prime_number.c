@@ -14,7 +14,7 @@ int is_prime(int i, int j)
 		return (0);
 	else if (i > j / 2)
 		return (1);
-	return (is_prime(i + 1 , j));
+	return (is_prime(i + 1, j));
 }
 
 /**
