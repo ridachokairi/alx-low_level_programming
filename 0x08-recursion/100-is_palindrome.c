@@ -40,7 +40,7 @@ int check_palindrome(char *s, int l, int r)
 
 int is_palindrome(char *s)
 {
-	int i = _strlen_recursions(s);
+	int i = _strlen_recursion(s);
 
 	return (check_palindrome(s, 0, i - 1));
 }
