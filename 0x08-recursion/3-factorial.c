@@ -3,7 +3,7 @@
 /**
  * factorial - calculates the factorial of a given number
  * @n: integer
- *
+ * Return: factorial of n
  */
 
 int factorial(int n)
