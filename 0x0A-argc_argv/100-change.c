@@ -22,25 +22,15 @@ int main(int argc, char* argv[])
 		while (atoi(argv[1]) > 0)
 		{
 			if (atoi(argv[1]) >= 25)
-			{
 				atoi(argv[1]) = atoi(argv[1]) - 25;
-			}
 			else if (atoi(argv[1]) >= 10)
-			{
 				atoi(argv[1]) = atoi(argv[1]) - 10;
-			}
 			else if (atoi(argv[1]) >= 5)
-			{
 				atoi(argv[1]) = atoi(argv[1]) - 5;
-			}
 			else if (atoi(argv[1]) >= 2)
-			{
 				atoi(argv[1]) = atoi(argv[1]) - 2;
-			}
 			else if (atoi(argv[1]) >= 1)
-			{
 				atoi(argv[1]) -= 1;
-			}
 			cent += 1;
 		}
 	}
