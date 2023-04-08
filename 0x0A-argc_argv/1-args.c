@@ -17,6 +17,6 @@ void print_number_arguments(int argc, char *argv[])
 	{
 		i++;
 	}
-	printf("%d", argc);
+	printf("%d", i);
 	_putchar('\n');
 }
