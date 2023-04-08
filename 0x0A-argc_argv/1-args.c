@@ -13,10 +13,10 @@ void print_number_arguments(int argc, char *argv[])
 {
 	int i = 0;
 
-	while (argv[i])
+	while (i < argc)
 	{
 		i++;
 	}
-	printf("%d",i);
+	printf("%d", argc);
 	_putchar('\n');
 }
