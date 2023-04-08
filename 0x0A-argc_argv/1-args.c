@@ -6,6 +6,7 @@
  * @argv: array of strings
  * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
 	if(argv[0] != NULL)
