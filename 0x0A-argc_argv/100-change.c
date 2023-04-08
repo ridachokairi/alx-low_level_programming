@@ -17,8 +17,6 @@ int main(int argc, char* argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else if (!atoi(argv[1]))
-			printf("0\n");
 	else
 	{
 		while (atoi(argv[1]) > 0)
@@ -46,7 +44,7 @@ int main(int argc, char* argv[])
 			else if (atoi(argv[1]) == 1)
 			{
 				cent++;
-				atoi(argv[1]) = 0;
+				atoi(argv[1]) -= 1;
 			}
 		}
 	}
