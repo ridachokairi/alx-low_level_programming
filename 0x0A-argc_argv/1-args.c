@@ -4,7 +4,7 @@
  * main - prints the number of arguments, followed by a new line
  * @argc: arguments count
  * @argv: array of strings
- * Return: 0
+ * Return: 0;
  */
 
 int main(int argc, char *argv[])
