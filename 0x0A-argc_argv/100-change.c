@@ -17,43 +17,39 @@ int main(int argc, char* argv[])
 		printf("Error\n");
 		return (1);
 	}
+	else if (!atoi(argv[1]))
+			printf("0\n");
 	else
 	{
-		if (!atoi(argv[1]))
-			printf("0\n");
-		else
+		while (atoi(argv[1]) > 0)
 		{
-			while (atoi(argv[1]) > 0)
+			if (atoi(argv[1]) / 25 > 0)
 			{
-				if (atoi(argv[1]) / 25 > 0)
-				{
-					cent++;
-					atoi(argv[1]) = atoi(argv[1]) - 25;
-				}
-				else if (atoi(argv[1]) / 10 > 0)
-				{
-					cent++;
-					atoi(argv[1]) = atoi(argv[1]) - 10;
-				}
-				else if (atoi(argv[1]) / 5 > 0)
-				{
-					cent++;
-					atoi(argv[1]) = atoi(argv[1]) - 5;
-				}
-				else if (atoi(argv[1]) / 2 > 0)
-				{
-					cent++;
-					atoi(argv[1]) = atoi(argv[1]) - 2;
-				}
-				else if (atoi(argv[1]) == 1)
-				{
-					cent++;
-					atoi(argv[1]) = 0;
-				}
+				cent++;
+				atoi(argv[1]) = atoi(argv[1]) - 25;
 			}
-			printf("%d\n", cent);
-			return (0);
+			else if (atoi(argv[1]) / 10 > 0)
+			{
+				cent++;
+				atoi(argv[1]) = atoi(argv[1]) - 10;
+			}
+			else if (atoi(argv[1]) / 5 > 0)
+			{
+				cent++;
+				atoi(argv[1]) = atoi(argv[1]) - 5;
+			}
+			else if (atoi(argv[1]) / 2 > 0)
+			{
+				cent++;
+				atoi(argv[1]) = atoi(argv[1]) - 2;
+			}
+			else if (atoi(argv[1]) == 1)
+			{
+				cent++;
+				atoi(argv[1]) = 0;
+			}
 		}
-	
+	}
+	printf("%d\n", cent);
+	return (0);
 }
-
