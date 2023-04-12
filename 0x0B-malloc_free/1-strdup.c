@@ -6,7 +6,7 @@
  * _strdrp - returns a pointer to a newly allocated space
  * memory
  * @str: the copied string
- * Return: pointer
+ * Return: pointer to the duplicated string, or NULL
  */
 
 char *_strdrp(char *str)
