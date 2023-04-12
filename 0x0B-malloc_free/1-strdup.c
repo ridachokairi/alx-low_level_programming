@@ -14,16 +14,16 @@ char *_strdrp(char *str)
 	int i, len = 0;
 	char *cop;
 
-	if (str = NULL)
+	if (str == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
-		l++;
+		len++;
 	cop = malloc(sizeof(char) * (len + 1));
 
 	if (cop == NULL)
 		return (NULL);
 	for (i = 0; str[i]; i++)
 		cop[i] = str[i];
-	cop[len] = '\0'
-		return (cop);
+	cop[len] = '\0';
+	return (cop);
 }
