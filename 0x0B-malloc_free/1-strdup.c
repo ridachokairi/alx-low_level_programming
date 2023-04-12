@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- * _strdrp - returns a pointer to a newly allocated space
+ * _strdup - returns a pointer to a newly allocated space
  * memory
  * @str: the copied string
  * Return: pointer to the duplicated string, or NULL
  */
 
-char *_strdrp(char *str)
+char *_strdup(char *str)
 {
 	int i, len = 0;
 	char *cop;
