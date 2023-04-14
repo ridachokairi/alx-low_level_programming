@@ -8,7 +8,7 @@
  * Return: pointer to the array or NULL
  */
 
-int *array_range(unsigned int min, unsigned int max)
+int *array_range(int min, int max)
 {
 	int *a;
 	int i;
