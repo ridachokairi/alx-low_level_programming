@@ -6,11 +6,12 @@
  * @ptr: pointer
  * @old_size: the allocated space for ptr
  * @new_size: the allocated space for the memory block
+ * Return: new size memory or NULL
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *p, *oldp = p;
+	char *p, *oldp = ptr;
 	unsigned int i;
 
 	if (ptr == NULL)
