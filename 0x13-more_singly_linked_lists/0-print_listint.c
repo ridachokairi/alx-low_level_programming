@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * print_listint - prints all the elements of a singly linked lists
@@ -13,9 +14,9 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
+		i++;
 		printf("%d\n", h->n);
 		h = h->next;
-		i++;
 	}
 	return (i);
 }
